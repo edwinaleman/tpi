@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+	<link rel="icon" href="{% static 'img/logo.png' %}">
+	<title>
+	{% block title %}
+	Bolsa de Trabajo UES
+	{% endblock %}
+	</title>
+</head>
+<body>
+	<header>
+
+		{% block menu-start %}
+		<nav class="menu-start">
+			<ul>
+				<li><a href="" class="btn-right">Ingresar</a></li>
+				<li><a href="/empresa" class="btn-right">Empresa</a></li>
+			</ul>
+		</nav>
+		{% endblock %}
+	
+		{% block baner %}
+		<div class="banner-cv">
+			<img class="banner" src="{% static 'img/banner.jpg' %}" alt="">
+		</div>
+		{% endblock %}
+
+		{% block menu-main %}
+		<nav class="menu-main">
+			<ul>
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Empleos</a></li>
+					<ul>
+						{% for facultad in facultad %}
+						<li><a href="">{{facultad.nombreFacultad}}</a></li>
+						{% endfor %}
+					</ul>
+				<li><a href="">Compra/Venta</a></li>
+				<li><a href="">Nuevo!</a></li>
+				<li><a href="">Nosotros</a></li>
+			</ul>
+		</nav>
+		{% endblock %}
+	</header>
+
+	{% block content %}
+
+	{% endblock %}
+
+	<footer>
+
+	</footer>
+
+</body>
+</html>

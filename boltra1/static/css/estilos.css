@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background:#FFE4E1;
+}
+
+/*Menu de inngreso*/
+.menu-start{
+	overflow: hidden;
+	background: #000;
+	width: 100%;
+	position: fixed;
+}
+
+.menu-start ul{
+	list-style: none;
+}
+
+.menu-start ul li{
+	float:right;
+	margin: 15px 15px;
+	display:inline-block;
+	font-family: verdana;
+	font-size: 80%;
+}
+
+.menu-start ul li a{
+	padding: 5px 5px;
+	background: #4CAF50;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.menu-start ul li a:hover{
+	background: #29a329;
+}
+/*Banner principal*/
+.banner{
+	width: 100%;
+	border: none;
+	height: 90%;
+}
+
+.banner-cv{
+	background: #000;
+}
+
+/*Menu principal*/
+.menu-main{
+	overflow: hidden;
+	background: #990000;
+	width: 20%;
+}
+
+.menu-main ul{
+	list-style: none;
+	width: 60%;
+}
+
+
+.menu-main ul li a{
+	padding: 20px 20px;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: verdana;
+	display: inline-block;
+}
+
+.menu-main ul li a:hover{
+	background:#cc0000;
+	color:yellow;
+	border-bottom: 6px solid #fff;
+	padding: 17px 20px;
+}
